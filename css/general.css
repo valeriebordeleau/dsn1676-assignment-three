@@ -33,7 +33,7 @@ html {
     position: absolute;
     top: 50px;
     left: 25px;
-    width: 30%;
+    width: 120px;
     -webkit-animation: asteroid-rotate 10s ease-in-out infinite alternate;
     animation: asteroid-rotate 10s ease-in-out infinite alternate;
 }
@@ -42,7 +42,7 @@ html {
     position: absolute;
     top: 50px;
     left: 250px;
-    width: 15%;
+    width: 80px;
     -webkit-animation: ship-path 5s ease-in-out infinite alternate;
     animation: ship-path 5s ease-in-out infinite alternate;
 }
@@ -52,7 +52,7 @@ html {
     width:100%;
     height: 100vh;
     -webkit-animation: stars-scale 15s ease-in-out infinite alternate;
-    animation: asteroid-rotate 10s ease-in-out infinite alternate;
+    animation: stars-scale 15s ease-in-out infinite alternate;
 }
 
 @-webkit-keyframes asteroid-rotate {
