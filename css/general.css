@@ -18,7 +18,7 @@ html {
   box-sizing: inherit;
 }
 
-.xbeam {
+/*.beam {
     position: absolute;
     top: 50px;
     width: 30px;
@@ -27,7 +27,7 @@ html {
     background-color: red;
     transform: 
 }
-
+*/
 
 .asteroid {
     position: absolute;
@@ -43,6 +43,7 @@ html {
     top: 50px;
     left: 250px;
     width: 15%;
+    -webkit-animation: ship-path 5s ease-in-out infinite alternate;
     animation: ship-path 5s ease-in-out infinite alternate;
 }
 
@@ -54,6 +55,17 @@ html {
     animation: asteroid-rotate 10s ease-in-out infinite alternate;
 }
 
+@-webkit-keyframes asteroid-rotate {
+    
+    0% {
+       -webkit- transform: rotate(0deg);
+    }
+    
+    100% {
+        -webkit-transform: rotate(360deg);
+    }   
+}
+
 @keyframes asteroid-rotate {
     
     0% {
@@ -62,6 +74,28 @@ html {
     
     100% {
         transform: rotate(360deg);
+    }   
+}
+
+@-webkit-keyframes ship-path {
+    0% {
+        -webkit-transform: translateY(0px);
+        -webkit-transform: translateX(0px);
+    }
+    
+     10% {
+        -webkit-transform: translateY(10px);
+        -webkit-transform: translateX(10px);
+    }
+    
+      60% {
+        -webkit-transform: translateY(20px);
+        -webkit-transform: translateX(60px);
+    }
+    
+    100% {
+        -webkit-transform: translateY(60px);
+        -webkit-transform: translateX(120px);
     }   
 }
 
@@ -87,26 +121,19 @@ html {
     }   
 }
 
-@keyframes beam {
+
+@-webkit-keyframes stars-scale {
     0% {
-        transform: translateY(0px);
-        transform: translateX(0px);
+        -webkit-transform: scale(1,1);
     }
     
-     10% {
-        transform: translateY(10px);
-        transform: translateX(10px);
-    }
-    
-      60% {
-        transform: translateY(20px);
-        transform: translateX(60px);
+     50% {
+        -webkit-transform: scale(1,0.9);
     }
     
     100% {
-        transform: translateY(60px);
-        transform: translateX(120px);
-    }   
+        -webkit-transform: scale(1.1,1);;
+    } 
 }
 
 @keyframes stars-scale {
