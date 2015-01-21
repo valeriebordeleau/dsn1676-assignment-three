@@ -55,10 +55,22 @@ html {
 @keyframes ship-path {
     0% {
         transform: translateY(0px);
+        transform: translateX(0px);
+    }
+    
+     10% {
+        transform: translateY(10px);
+        transform: translateX(10px);
+    }
+    
+      60% {
+        transform: translateY(20px);
+        transform: translateX(60px);
     }
     
     100% {
         transform: translateY(60px);
+        transform: translateX(120px);
     }   
 }
 
@@ -72,6 +84,6 @@ html {
     }
     
     100% {
-        transform: scale(1,1.1);;
+        transform: scale(1.1,1);;
     } 
 }
